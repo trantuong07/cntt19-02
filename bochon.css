@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gold;
+    padding: 0;
+    margin: 0;
+
+}
+a{
+    text-decoration:  none;
+    color:hotpink;
+
+}
+.box{
+    background-color: pink;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+}
+.title{
+    color:  black;
+    margin-top: 0;
+
+}
+.btn{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: green;
+}
+#header{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+#header h1{
+    margin: 0;
+    font-size: 20px;
+}
+#menu{
+    background-color: black;
+
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+menu ul li{
+    position : relative;
+}
+#menu ul li a{
+    display: block;
+    padding: 15px;
+}
+#menu ul li :hover{
+    background-color: blanchedalmond;
+}
+#menul li ul{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: black ;
+    min-width: 180 px;
+    flex-direction: column;
+    z-index: 100;
+
+}
+#menul ul li :hover ul {
+    display: flex;
+
+
+}
+#menu ul li ul li ul{
+    top: 0;
+    left: 100px;
+
+}
+#main{
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap:20px;
+
+}
+#content{
+    flex: 3;
+
+}
+#sidebar{
+    flex: 1;
+
+}
+#footer{
+    background-color: blueviolet;
+    color: aqua;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 15px;
+}

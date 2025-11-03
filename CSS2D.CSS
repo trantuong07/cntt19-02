@@ -1,0 +1,96 @@
+:root{
+    --bg:#0f172a;
+    --ink:#1b97a556;
+    --accent:#38bdf8;
+    --card:#1e293a;
+}
+*{
+    box-sizing:border-box;
+
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--ink);
+    background: -o-linear-gradient(120dep,#0b1224,#0f172a,0b1224 40%);
+
+
+}
+header{
+    padding: 28px 20px;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+}
+h1{
+    margin: 0 0 6px;
+    font-size: 28px;
+
+
+    
+}
+p{
+    margin: 0;
+    color: #9fb0c2;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,mimax(260px,1fr));
+    gap: 18px;
+    padding: 24px;
+    max-width: 1200px;
+    margin:0 auto; 
+
+}
+.card{
+    background-color: var(--card);
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgb(0 ,0 ,0 ,.2)
+}
+.card h2{
+    margin: 6px 0 12px;
+    font-size: 18px;
+    color: black;
+}
+.demo{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: #334155;
+    border: 1px dashed #0b1224;
+    border-radius: 12px;
+    min-height: 170px;
+
+}
+.box{
+    width: 110px;
+    height: 110px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f172a;
+    font-weight: 700;
+    border-radius: 12px;
+    background:linear-gradient(180deg,#0b1224,#38bdf8);
+    transition: transform.7s ease ,box-shadow.7s ease;
+    box-shadow: 0 8px 18px rgba(3,105,161,35);
+
+    will-change: transform;
+    user-select: none;
+
+}
+.note{
+    font-size: 13px;
+    color: aqua;
+    margin-top: 10px;
+    line-height: 1.5;
+
+}
+.demo .translate:hover.box{
+    transform:translate(50px,30px);
+}
